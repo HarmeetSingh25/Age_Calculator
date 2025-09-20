@@ -2,11 +2,13 @@
   --Bg-1: #b6ceb4;
   --Bg-2: #ffecc0;
 }
-/* @font-face {
-    font-family: ;
-    src: url();
-} */
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Regular.ttf);
+}
 * {
+  font-weight: 800;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
