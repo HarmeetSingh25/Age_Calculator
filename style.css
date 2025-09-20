@@ -1,12 +1,14 @@
 :root {
   --Bg-1: #b6ceb4;
   --Bg-2: #ffecc0;
+  --Input: #ddf4e7;
 }
 @font-face {
   font-family: Poppins;
   src: url(Poppins-Regular.ttf);
 }
 * {
+  text-decoration: solid;
   font-weight: 800;
   font-family: Poppins;
   margin: 0;
@@ -22,4 +24,71 @@ main {
   width: 100%;
   height: 100%;
   background: linear-gradient(165deg, var(--Bg-1), var(--Bg-2));
+}
+.Page1 {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Text {
+  margin: 1rem;
+}
+.Text > h1 {
+  line-height: 3rem;
+  font-size: 3rem;
+}
+.Text h1 span {
+  color: #7b4019;
+  margin-left: 10rem;
+}
+.Input-Container {
+  width: 30%;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: rgb(188, 168, 141, 0.3);
+}
+.Input-Container input {
+  position: relative;
+  background: var(--Input);
+  border: 0;
+  flex: 1;
+  font-size: 1rem;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+}
+.Input-Container button {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  transition: 0.2s all;
+}
+.Input-Container button:hover{
+    background-color: rgba(189, 189, 189, 0.548);
+    color: white;
+}
+.Input-Container button:active {
+    scale: 0.97;
+    box-shadow: 2px 2px black;
+}
+.Input-Container > input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  background-position: right;
+  height: auto;
+  margin-right: 1rem;
+  background-size: 30px;
 }
