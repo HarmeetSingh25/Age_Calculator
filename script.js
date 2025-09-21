@@ -1,9 +1,11 @@
 let Input = document.getElementById("Date");
 let BtnCalculate = document.getElementById("Calculate");
-let p = document.createElement("p");
+let p = document.querySelector(".ResultContainer p");
+p.classList = "ResultContainer";
 Input.max = new Date().toISOString().split("T")[0];
 
 BtnCalculate.addEventListener("click", () => {
+  p.textContent = "";
   let Birthday = new Date(Input.value);
   let SelctedDate = Birthday.getDate();
   let SelctedMonth = Birthday.getMonth() + 1;
@@ -33,6 +35,7 @@ BtnCalculate.addEventListener("click", () => {
   } else {
     DayOlder = SelctedDate;
   }
+  p.textContent = `You are ${YearOlder} Years older`;
   //   console.log(SelctedDate, TodayDate);
 
   //   console.log(DayOlder, MonthOlder, YearOlder);

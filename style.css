@@ -92,3 +92,13 @@ main {
   margin-right: 1rem;
   background-size: 30px;
 }
+.ResultContainer {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  
+}
